@@ -1,0 +1,66 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 45px;
+    margin: 45px;  
+}
+
+.card{
+    border-radius: 15px;
+}
+
+.cards:hover {
+    background-color: rgb(82, 92, 107);
+
+}
+
+.checkButton{
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Adjusted the 'left' property */
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.checkButton {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    /* Additional styling for the checkbox */
+}
+
+.show {
+    display: block;
+}
+
+
+/* * media queries..................................... */
+
+/* media query for screen width up to 800px */
+@media screen and (max-width: 800px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* media query for screen width up to 1080px */
+/* @media screen and (max-width: 1080px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
